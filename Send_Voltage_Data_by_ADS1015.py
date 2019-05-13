@@ -31,10 +31,10 @@ for num in range(roop):
         vol3 += math.pow(tmp3, 2)
         time.sleep(2)
 
-out0 = math.sqrt(vol0/math.pow(roop,2))
-out1 = math.sqrt(vol1/math.pow(roop,2))
-out2 = math.sqrt(vol2/math.pow(roop,2))
-out3 = math.sqrt(vol3/math.pow(roop,2))
+out0 = math.sqrt(vol0/roop)
+out1 = math.sqrt(vol1/roop)
+out2 = math.sqrt(vol2/roop)
+out3 = math.sqrt(vol3/roop)
 #print out1
 r = ambi.send({"d1": out0, "d2": out1, "d3": out2,  "d4": out3})
 r.close()
